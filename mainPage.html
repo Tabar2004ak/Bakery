@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bartex', Arial, sans-serif; /* Use Bartex font as primary */
+            background-image: url('https://img.freepik.com/free-photo/top-view-bread-concep-with-copy-space_23-2148648777.jpg?t=st=1713793733~exp=1713797333~hmac=c2c884b76de4277e7391f4502251fe540c5bbfd95a193853105232d57df11159&w=1480');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+            background-attachment: fixed; /* Keep the background image fixed */
+        }
+
+        header {
+            background-color: #000000;
+            padding: 23px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            display: flex;
+            justify-content: space-between; /* Distribute items evenly */
+            align-items: center;
+            height: 64px; /* Adjust the height as needed */
+        }
+
+        header img {
+            max-width: 110px;
+            height: auto;
+            margin-left: 0px; /* Adjust the left margin of the logo */
+        }
+
+        h1 {
+            margin-left: 700px; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            font-size: 100px; /* Adjust text size as needed */
+            font-family: 'Bartex', sans-serif; /* Use Bartex font */
+        }
+
+        nav {
+            margin-right: 20px; /* Adjust the right margin of the buttons */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 21px;
+            position: relative; /* Set container to relative position */
+        }
+
+        .grey-square {
+            width: 800px; /* Adjust width as needed */
+            height: 850px; /* Adjust height as needed */
+            background-color: rgba(204, 204, 204, 0.5); /* Grey color with 50% opacity */
+            position: absolute;
+            top: 1100%;
+            left: 10%;
+            transform: translate(-50%, -50%); /* Translate back by half its own width and height */
+            
+            /* Style for text */
+            display: flex;
+            flex-direction: column; /* Align text in column */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            font-family: 'Lobster', cursive; /* Use Lobster font */
+        }
+
+        .main-text {
+            font-size: 50px; /* Adjust text size as needed */
+            font-family: 'Lobster', cursive; /* Use Lobster font */
+        }
+
+        .additional-text {
+            font-size: 30px; /* Adjust text size as needed */
+            margin-top: 20px; /* Adjust spacing from main text */
+            font-family: 'Lobster', cursive; /* Use Lobster font */
+        }
+
+        button {
+            background-color: transparent; /* Remove background color */
+            color: #fff;
+            padding: 10px 30px; /* Adjust padding */
+            border: none;
+            margin-top: 20px; /* Adjust margin */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px; /* Adjust font size as needed */
+            font-family: 'Lobster', cursive; /* Use Lobster font */
+        }
+
+        button:hover {
+            background-color: #5b5c5c;
+        }
+    </style>
+    <!-- Link the Bartex font -->
+    <link rel="stylesheet" href="Bartex-Regular.ttf">
+    <!-- Define the Bartex font -->
+    <style>
+        @font-face {
+            font-family: 'Bartex';
+            src: url('Bartex-Regular.ttf') format('truetype');
+        }
+    </style>
+    <!-- Link the Lobster font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="D:\it_Proj\86299.jpg" alt="Bakery Logo">
+        <h1>BaKery</h1> <!-- Bakery text added here -->
+        <nav>
+            <button onclick="openPage('page1.html')">Cookies</button>
+            <button onclick="openPage('page2.html')">Coffee</button>
+            <button onclick="openPage('page3.html')">Croissant</button>
+            <button onclick="openPage('page4.html')">Soft drinks</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="grey-square">
+            <div class="main-text">Welcome to our Bakery!</div> <!-- Main text -->
+            <div class="additional-text">Every aroma tells a story, and every bite is a delight! Step into our warm embrace of freshly baked goodness, where each pastry, cookie, and loaf is crafted with love and passion.</div> <!-- Additional text -->
+            <button onclick="openPage('login.html')">Login</button> <!-- Order now button -->
+        </div>
+    </div>
+
+    <script>
+        function openPage(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
